@@ -21,6 +21,12 @@ This list summarises how I use Docker locally for short-living tasks..
    docker-compose up -d
    ```
 
+   Then I can connect to the server through the "bridge" IP usually
+   `10.0.2.15`; and in SQL Server's case `10.0.2.15:1433` or more specifically
+   `10.0.2.15,1433`.  I don't use the "linking" function provided by
+   Docker/`docker-compose` because it has too much limitationl one bad one
+   being forcing us to delete linked service when we want to keep it.
+
    Before I turn off my machine,
 
    ```
